@@ -1,10 +1,9 @@
-/* stylelint-disable function-url-quotes */
-/* stylelint-disable font-family-name-quotes */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@400;700;900&display=swap");
 
-/* Global */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 html {
-  font-size: 62.5%; /* 1 REM = 10PX */
+  font-size: 62.5%;
 }
 
 html,
@@ -18,23 +17,15 @@ a {
   text-decoration: none;
 }
 
-/* TOP NAV */
-
-.burger {
+.top-nav-burger {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* outline: 1px solid blue; */
-}
-
-.top-nav-burger {
   padding-right: 1.5rem;
 }
 
-/* PAGE BODY */
 .container.introduction {
-  background-image: url(/resources/images/image_geometry_2.png);
+  background-image: url("/resources/images/image_geometry_2.png");
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -43,8 +34,6 @@ a {
   display: flex;
   max-width: 120rem;
   margin: 0 auto;
-
-  /* outline: 1px solid red; */
   flex-direction: column;
   min-height: 75vh;
   align-items: center;
@@ -99,5 +88,4 @@ a {
 
 .menu-burger-image img:hover {
   transform: scale(1.2);
-  transition: 0.5s ease;
 }
