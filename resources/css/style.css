@@ -1,0 +1,87 @@
+/* stylelint-disable function-url-quotes */
+/* stylelint-disable font-family-name-quotes */
+
+/* Global */
+
+html {
+  font-size: 62.5%; /* 1 REM = 10PX */
+}
+
+html,
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* TOP NAV */
+
+.burger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* outline: 1px solid blue; */
+}
+
+.top-nav-burger {
+  padding-right: 1.5rem;
+}
+
+/* PAGE BODY */
+.container.introduction {
+  background-image: url(/resources/images/image_geometry_2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.introduction {
+  display: flex;
+  max-width: 120rem;
+  margin: 0 auto;
+
+  /* outline: 1px solid red; */
+  flex-direction: column;
+  min-height: 75vh;
+  align-items: center;
+  padding: 2.5rem;
+}
+
+.developers-name {
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  color: #1a2236;
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+.intro-content {
+  font-family: "Poppins", serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #1a2236;
+  line-height: 21px;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.colab-detail {
+  display: flex;
+  padding-top: 2.5rem;
+}
+
+.colab-butn {
+  display: flex;
+}
+
+.start-colab {
+  font-family: "Poppins", serif;
+  font-size: 1.6rem;
+  color: #fff;
+  background: #1a2236;
+  padding: 1.3rem 6.2rem;
+}
