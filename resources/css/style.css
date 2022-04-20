@@ -49,7 +49,7 @@ a {
 }
 
 .intro-content {
-  font-family: "Poppins", serif;
+  font-family: Poppins, serif;
   font-size: 1.4rem;
   font-weight: 400;
   color: #1a2236;
@@ -68,7 +68,7 @@ a {
 }
 
 .start-colab {
-  font-family: "Poppins", serif;
+  font-family: Poppins, serif;
   font-size: 1.6rem;
   color: #fff;
   background: #1a2236;
