@@ -246,10 +246,7 @@ a {
   font-family: Poppins, serif;
   font-size: 1.6rem;
   color: #fff;
-}
-
-.bottom-boxes ul {
-  /* padding-left: 6rem; */
+  padding-left: 6rem;
 }
 
 .languages-content {
@@ -269,8 +266,4 @@ a {
   padding-bottom: 2.5rem;
   display: block;
   padding-left: 4rem;
-}
-
-.category-listed {
-  padding-left: 6rem;
 }
