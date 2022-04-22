@@ -24,7 +24,7 @@ Once you have downloaded the project to your local machine, you can extract the 
 
 ## Built With
 
-- CSS - HTML
+- CSS - HTML - CSS GRID
 - FLEXBOX
 
 ## Authors 👤

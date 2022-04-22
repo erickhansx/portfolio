@@ -5,11 +5,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
-/* * {
-  margin: 0;
-  padding :0;
-} */
-
 html {
   font-size: 62.5%;
 }
@@ -218,21 +213,21 @@ a {
 .languages-box {
   display: flex;
   background-color: #1c528a;
-  background-image: url(/resources/images/hashtag.png);
+  background-image: url("/resources/images/hashtag.png");
   background-repeat: no-repeat;
   background-position: bottom right;
 }
 
 .frameworks-box {
   background-color: #e2505c;
-  background-image: url(/resources/images/rectangle.png);
+  background-image: url("/resources/images/rectangle.png");
   background-repeat: no-repeat;
   background-position: bottom right;
 }
 
 .skills-box {
   background-color: #febf52;
-  background-image: url(/resources/images/bulbskills.png);
+  background-image: url("/resources/images/bulbskills.png");
   background-repeat: no-repeat;
   background-position: bottom right;
 }
@@ -244,7 +239,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  /* padding-left: 6rem; */
 }
 
 .bottom-boxes ul li {
