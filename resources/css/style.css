@@ -241,7 +241,7 @@ a {
   align-items: flex-start;
 }
 
-.bottom-boxes ul li {
+.bottom-boxes .category-listed {
   list-style: disc;
   font-family: Poppins, serif;
   font-size: 1.6rem;
@@ -249,10 +249,28 @@ a {
 }
 
 .bottom-boxes ul {
-  padding-left: 6rem;
+  /* padding-left: 6rem; */
 }
 
 .languages-content {
   display: flex;
   flex-direction: column;
+}
+
+.section-image {
+  min-width: 100%;
+}
+
+.category-header {
+  font-family: Poppins, serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  padding-bottom: 2.5rem;
+  display: block;
+  padding-left: 4rem;
+}
+
+.category-listed {
+  padding-left: 6rem;
 }
