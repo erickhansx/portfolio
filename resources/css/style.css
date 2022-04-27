@@ -260,10 +260,126 @@ a {
 
 .category-header {
   font-family: Poppins, serif;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 800;
   color: #fff;
   padding-bottom: 2.5rem;
   display: block;
   padding-left: 4rem;
+}
+
+.footer {
+  background-image: url("../images/image_geometry_1.png");
+  background-repeat: no-repeat;
+  background-color: #f9f9fa;
+}
+
+.footer-form {
+  padding-top: 10.6rem;
+  padding-left: 1.8rem;
+  padding-right: 1.4rem;
+}
+
+.form-h3 {
+  color: #1a2236;
+  font-size: 5rem;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  padding-bottom: 2rem;
+}
+
+.p-h3 {
+  color: #1a2236;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: Poppins, serif;
+  padding-bottom: 3.2rem;
+}
+
+.social-media {
+  display: flex;
+  background-color: #1a2236;
+  flex-direction: column;
+  margin-top: 6.4rem;
+}
+
+.social-h3 {
+  color: #92dcdc;
+  font-size: 1.6rem;
+  font-family: Poppins, serif;
+  font-weight: 500;
+  line-height: 2.4rem;
+  padding-left: 1.9rem;
+}
+
+.social-media ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.9rem 4rem 2rem;
+  margin-top: 3rem;
+}
+
+.get-resume {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding-top: 3.2rem;
+}
+
+.footer-form input {
+  padding-left: 1.6rem;
+  border: none;
+  font-family: Poppins, serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #1a2236;
+}
+
+.footer-form input:focus {
+  outline: none;
+}
+
+.footer-form li {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  background-color: #fff;
+  height: 5.2rem;
+}
+
+.footer-form li label {
+  padding-left: 1.6rem;
+  font-family: Poppins, serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #7d7c84;
+}
+
+.footer-form textarea {
+  padding-left: 1.6rem;
+  border: none;
+  font-family: Poppins, serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #1a2236;
+  margin-bottom: 2rem;
+}
+
+.footer-form ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.textarea {
+  min-height: 11.2rem;
+}
+
+.button-bottom {
+  display: flex;
+  padding-top: 2rem;
 }

@@ -5,6 +5,7 @@
 > This is my first portfolio.
 > It was based on a FIGMA template and I used HTML,
 > CSS and CSS FLEXBOX to build the first part of the mobile version.
+> We added the footer with a form and the social media icons using flexbox.
 
 ## Getting Started
 
@@ -34,6 +35,12 @@ Once you have downloaded the project to your local machine, you can extract the 
 - GitHub: [@erickhansx](https://github.com/erickhansx)
 - Twitter: [@TheErickHans](https://twitter.com/TheErickHans)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/erick-hans-858382231/)
+
+👤 **Author2**
+
+- GitHub: [@dqarias](https://github.com/dqarias)
+- Twitter: [@DinoRonald7](https://twitter.com/DinoRonald7?t=Zanx9DXMEG9C_PNF3woZFg&s=08)
+- LinkedIn: [Dino Quispe](https://www.linkedin.com/in/dino-ronald-quispe-arias-8ba72174/)
 
 ## 🤝 Contributing
 
