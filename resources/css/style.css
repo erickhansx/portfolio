@@ -271,9 +271,22 @@ a {
 .social-media {
   display: flex;
   background-color: #1a2236;
+  flex-direction: column;
+}
+
+.social-h3 {
+  color: #92dcdc;
+  font-size: 16px;
+  font-family: Poppins, serif;
+  font-weight: 500;
+  line-height: 24px;
+  padding-top: 32px;
+  padding-left: 19px;
 }
 
 .social-media ul {
   display: flex;
-  background-color: #1c528a;
+  justify-content: space-between;
+  padding: 0 19px 40px 20px;
+  margin-top: 40px;
 }
