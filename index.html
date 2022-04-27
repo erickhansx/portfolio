@@ -272,7 +272,7 @@
     </section>
     <footer class="footer">
       <fieldset>
-        <form action="https://formspree.io/f/xzbokrya" method="POST">
+        <form class="footer-form" action="https://formspree.io/f/xzbokrya" method="POST">
           <h3 class="form-h3">Get started</h3>
           <p class="p-h3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -281,11 +281,11 @@
           <ul>
             <li>
               <label for="name">Your name</label>
-              <input type="text" name="user_name" id="name" maxlength="30" />
+              <input type="text" name="user_name" id="name" maxlength="30" placeholder="Write your name" required/>
             </li>
             <li>
               <label for="email">Your email</label>
-              <input type="email" name="E-mail" id="email" />
+              <input type="email" name="E-mail" id="email" placeholder="Write your e-mail" required/>
             </li>
             <li>
               <textarea
@@ -295,6 +295,7 @@
                 rows="10"
                 maxlength="500"
                 placeholder="Enter your message here..."
+                required
               ></textarea>
             </li>
             <div class="get-my-cv">
