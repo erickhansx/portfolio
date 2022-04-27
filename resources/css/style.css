@@ -271,11 +271,15 @@ a {
 .footer {
   background-image: url(../images/image_geometry_1.png);
   background-repeat: no-repeat;
+  background-color: #f9f9fa;
+  min-height: 100vh ;
+ 
 }
 
 .footer-form {
   padding-top: 10.6rem;
   padding-left: 1.8rem;
+  padding-right: 1.4rem;
 }
 
 .form-h3 {
@@ -331,6 +335,10 @@ a {
   color: #1a2236;
 }
 
+.footer-form input:focus {
+  outline: none;
+}
+
 /* .footer-form ul {
   display: flex;
   flex-direction: column;
@@ -353,3 +361,16 @@ a {
   line-height: 1.5rem;
   color: #7d7c84;
 }
+
+.footer-form textarea{
+  padding-left: 1.6rem;
+  border: none;
+  font-family: Poppins, serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #1a2236;
+  margin-bottom: 2rem;
+
+}
+
