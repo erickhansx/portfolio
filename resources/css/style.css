@@ -270,15 +270,15 @@ a {
 
 .footer {
   background-image: url(../images/image_geometry_1.png);
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
-.footer-form{
+.footer-form {
   padding-top: 10.6rem;
   padding-left: 1.8rem;
 }
 
-.form-h3{
+.form-h3 {
   color: #1a2236;
   font-size: 5rem;
   font-weight: 400;
@@ -321,5 +321,35 @@ a {
   padding-top: 3.2rem;
 }
 
-.resume-image {
+.footer-form input {
+  padding-left: 1.6rem;
+  border: none;
+  font-family: Poppins, serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #1a2236;
+}
+
+/* .footer-form ul {
+  display: flex;
+  flex-direction: column;
+} */
+
+.footer-form li {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  background-color: #fff;
+  height: 5.2rem;
+}
+
+.footer-form li label {
+  padding-left: 1.6rem;
+  font-family: Poppins, serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #7d7c84;
 }
