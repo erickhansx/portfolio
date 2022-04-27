@@ -260,7 +260,7 @@ a {
 
 .category-header {
   font-family: Poppins, serif;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 800;
   color: #fff;
   padding-bottom: 2.5rem;
@@ -276,17 +276,26 @@ a {
 
 .social-h3 {
   color: #92dcdc;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: Poppins, serif;
   font-weight: 500;
-  line-height: 24px;
-  padding-top: 32px;
-  padding-left: 19px;
+  line-height: 2.4rem;
+  padding-left: 1.9rem;
 }
 
 .social-media ul {
   display: flex;
   justify-content: space-between;
-  padding: 0 19px 40px 20px;
-  margin-top: 40px;
+  padding: 0 1.9rem 4rem 2rem;
+  margin-top: 3rem;
+}
+
+.get-resume {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding-top: 3.2rem;
+}
+
+.resume-image {
 }
