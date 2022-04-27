@@ -340,11 +340,6 @@ a {
   outline: none;
 }
 
-/* .footer-form ul {
-  display: flex;
-  flex-direction: column;
-} */
-
 .footer-form li {
   display: flex;
   flex-direction: column;
