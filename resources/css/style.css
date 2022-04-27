@@ -272,8 +272,6 @@ a {
   background-image: url(../images/image_geometry_1.png);
   background-repeat: no-repeat;
   background-color: #f9f9fa;
-  min-height: 100vh ;
- 
 }
 
 .footer-form {
@@ -287,6 +285,7 @@ a {
   font-size: 5rem;
   font-weight: 400;
   font-family: "Playfair Display", serif;
+  padding-bottom: 2rem;
 }
 
 .p-h3 {
@@ -294,12 +293,14 @@ a {
   font-size: 1.4rem;
   font-weight: 400;
   font-family: Poppins, serif;
+  padding-bottom: 3.2rem;
 }
 
 .social-media {
   display: flex;
   background-color: #1a2236;
   flex-direction: column;
+  margin-top: 6.4rem;
 }
 
 .social-h3 {
@@ -362,7 +363,7 @@ a {
   color: #7d7c84;
 }
 
-.footer-form textarea{
+.footer-form textarea {
   padding-left: 1.6rem;
   border: none;
   font-family: Poppins, serif;
@@ -371,6 +372,14 @@ a {
   line-height: 2.1rem;
   color: #1a2236;
   margin-bottom: 2rem;
-
 }
 
+.footer-form ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.textarea {
+  min-height: 11.2rem;
+}
