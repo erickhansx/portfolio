@@ -269,7 +269,7 @@ a {
 }
 
 .footer {
-  background-image: url(../images/image_geometry_1.png);
+  background-image: url("../images/image_geometry_1.png");
   background-repeat: no-repeat;
   background-color: #f9f9fa;
 }
@@ -381,4 +381,5 @@ a {
 
 .button-bottom {
   display: flex;
+  padding-top: 2rem;
 }
