@@ -124,58 +124,6 @@ button {
   display: none;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 62.5%;
-  }
-
-  .about-me {
-    box-sizing: border-box;
-    width: 144rem;
-    margin: 30px auto;
-    display: grid;
-    grid-template-rows: 20rem 8.4rem 7rem 17.5rem;
-    grid-template-columns: 50% 50%;
-
-    grid-template-areas:
-      "h1 background"
-      "paragraph background"
-      "button background"
-      "dots background";
-  }
-
-  .main-h1 {
-    grid-area: h1;
-  }
-
-  /* .about-me {
-    display: grid;
-    width: 140rem;
-    grid-template-columns: 50% 50%;
-    background-image: none;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  .about-me-mobile {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / 2;
-    grid-row: 1/2;
-    min-width: 0;
-    min-height: 0;
-  }
-
-  .about-me-background {
-    display: block;
-    width: 100%;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    min-width: 0;
-    min-height: 0;
-  } */
-}
-
 .about-me-header {
   padding: 2rem;
 }
@@ -486,8 +434,5 @@ button {
 
 .last-button {
   display: flex;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding: 1.5rem 4rem;
 }
