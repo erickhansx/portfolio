@@ -4,272 +4,289 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="resources/css/reset.css" />
-    <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="stylesheet" href="./resources/css/reset.css" />
+    <link rel="stylesheet" href="./resources/css/style.css" />
     <title>Portfolio</title>
   </head>
   <body>
+    <header class="nav-menu-top">
+      <nav class="desktop-nav-top">
+        <ul class="desktop-nav-list">
+          <li>Hello</li>
+          <li>Portfolio</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <nav class="menu-top">
+        <div class="background-image-nav"></div>
+        <div class="burger-image-mobile">
+          <a href="#">
+            <img
+              class="burguer-image"
+              src="./resources/images/ic_menu.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
     <main>
-      <header class="top-nav-burger">
-        <div class="top-corner-image">
-          <img
-            src="/resources/images/image_geometry_1.png"
-            alt="corner image"
-          />
-        </div>
-        <nav class="container burger">
-          <div class="menu-burger-image">
-            <img src="/resources/images/ic_menu.png" alt="burguer menu" />
+      <section class="about-me">
+        <div class="about-me-mobile">
+          <div class="about-me-header">
+            <h1 class="main-h1">
+              Charlie <br />
+              Giorgania
+            </h1>
           </div>
-        </nav>
-      </header>
-      <section class="container introduction">
-        <div>
-          <h1 class="developers-name">Charlie Giorgania</h1>
-          <p class="intro-content">
-            Hello! I am a software developer! I can help you build a product,
-            feature or website. Take a look of my works. If you like what you
-            see and have a project you need coded, don’t hesitate and contact
-            me.
-          </p>
-        </div>
-        <div class="colab-detail">
-          <div class="colab-butn">
-            <a href="#" class="start-colab colab-butn colab-detail"
+          <div class="about-me-paragraph">
+            <p>
+              Hello! I am a software developer! I can help you build a product,
+              feature or website. Taka a look of my works. If you like what you
+              see and have a project you need coded, don’t hesitate and contact
+              me.
+            </p>
+          </div>
+          <div class="button-top">
+            <a class="get-my-cv-btn main-button button-action" href="#"
               >Start collaboration</a
             >
           </div>
         </div>
+        <div class="about-me-background">
+          <img
+            src="./resources/images/mainbackground.png"
+            alt="main background"
+          />
+        </div>
       </section>
     </main>
-    <section class="projects-main">
-      <div class="projects-header">
-        <h2 class="main-topic topic-h2">Projects</h2>
+    <section class="projects">
+      <div class="projects-head">
+        <h1 class="project-header">Projects</h1>
       </div>
-      <div class="grd-container works-catalog">
-        <div class="project-intro">
-          <img
-            src="/resources/images/computer-hands.png"
-            alt="hands on computer"
-            class="section-image"
-          />
-        </div>
-        <div class="works-info">
-          <h3>Project name goes here</h3>
-          <div class="works-skills">
-            <ul class="skills-list">
+      <div class="grd-container">
+        <div class="project-1">
+          <div class="project-1-image">
+            <img
+              class="project-img"
+              src="./resources/images/computer-hands.png"
+              alt="Computer"
+            />
+          </div>
+          <div class="project-1-info">
+            <h3>Project name goes here</h3>
+            <ul class="project-technologies">
               <li>HTML/CSS</li>
               <li>Ruby on Rails</li>
-              <li>JavaScript</li>
+              <li>Javascript</li>
             </ul>
-            <div class="works-bttn">
-              <a href="#" class="works-btn-styles">See this project</a>
-              <img
-                src="/resources/images/arrow.png"
-                alt="arrow image"
-                class="arrow-image"
-              />
+            <div class="project-button">
+              <div>
+                <a href="#"><span>See this project</span> </a>
+              </div>
+              <div class="project-button-arrow">
+                <img src="./resources/images/arrow.png" alt="arrow" />
+              </div>
             </div>
           </div>
         </div>
-        <div class="project-intro">
-          <img
-            src="/resources/images/macbookpro.png"
-            alt="Macbook pro computer"
-            class="section-image"
-          />
-        </div>
-        <div class="works-info">
-          <h3>Project name goes here</h3>
-          <div class="works-skills">
-            <ul class="skills-list">
+        <div class="project-1">
+          <div class="project-1-image">
+            <img
+              class="project-img"
+              src="./resources/images/macbookpro.png"
+              alt="Computer"
+            />
+          </div>
+          <div class="project-1-info">
+            <h3>Project name goes here</h3>
+            <ul class="project-technologies">
               <li>HTML/CSS</li>
               <li>Ruby on Rails</li>
-              <li>JavaScript</li>
+              <li>Javascript</li>
             </ul>
-            <div class="works-bttn">
-              <a href="#" class="works-btn-styles">See this project</a>
-              <img
-                src="/resources/images/arrow.png"
-                alt="arrow image"
-                class="arrow-image"
-              />
+            <div class="project-button">
+              <div>
+                <a href="#"><span>See this project</span> </a>
+              </div>
+              <div class="project-button-arrow">
+                <img src="./resources/images/arrow.png" alt="arrow" />
+              </div>
             </div>
           </div>
         </div>
-        <div class="project-intro">
-          <img
-            src="/resources/images/abcomputer.png"
-            alt="AB Computer"
-            class="section-image"
-          />
-        </div>
-        <div class="works-info">
-          <h3>Project name goes here</h3>
-          <div class="works-skills">
-            <ul class="skills-list">
+        <div class="project-1">
+          <div class="project-1-image">
+            <img
+              class="project-img"
+              src="./resources/images/abcomputer.png"
+              alt="Computer"
+            />
+          </div>
+          <div class="project-1-info">
+            <h3>Project name goes here</h3>
+            <ul class="project-technologies">
               <li>HTML/CSS</li>
               <li>Ruby on Rails</li>
-              <li>JavaScript</li>
+              <li>Javascript</li>
             </ul>
-            <div class="works-bttn">
-              <a href="#" class="works-btn-styles">See this project</a>
-              <img
-                src="/resources/images/arrow.png"
-                alt="arrow image"
-                class="arrow-image"
-              />
+            <div class="project-button">
+              <div>
+                <a href="#"><span>See this project</span> </a>
+              </div>
+              <div class="project-button-arrow">
+                <img src="./resources/images/arrow.png" alt="arrow" />
+              </div>
             </div>
           </div>
         </div>
-        <div class="project-intro">
-          <img
-            src="/resources/images/graphicscomputerleft.png"
-            alt="Graphics in Computer"
-            class="section-image"
-          />
-        </div>
-        <div class="works-info">
-          <h3>Project name goes here</h3>
-          <div class="works-skills">
-            <ul class="skills-list">
+        <div class="project-1">
+          <div class="project-1-image">
+            <img
+              class="project-img"
+              src="./resources/images/graphicscomputerleft.png"
+              alt="Computer"
+            />
+          </div>
+          <div class="project-1-info">
+            <h3>Project name goes here</h3>
+            <ul class="project-technologies">
               <li>HTML/CSS</li>
               <li>Ruby on Rails</li>
-              <li>JavaScript</li>
+              <li>Javascript</li>
             </ul>
-            <div class="works-bttn">
-              <a href="#" class="works-btn-styles">See this project</a>
-              <img
-                src="/resources/images/arrow.png"
-                alt="arrow image"
-                class="arrow-image"
-              />
+            <div class="project-button">
+              <div>
+                <a href="#"><span>See this project</span> </a>
+              </div>
+              <div class="project-button-arrow">
+                <img src="./resources/images/arrow.png" alt="arrow" />
+              </div>
             </div>
           </div>
         </div>
-        <div class="project-intro">
-          <img
-            src="/resources/images/graphicscomputerright.png"
-            alt="Graphics in Computer"
-            class="section-image"
-          />
-        </div>
-        <div class="works-info">
-          <h3 class="sections-headers">Project name goes here</h3>
-          <div class="works-skills">
-            <ul class="skills-list">
+        <div class="project-1">
+          <div class="project-1-image">
+            <img
+              class="project-img"
+              src="./resources/images/graphicscomputerright.png"
+              alt="Computer"
+            />
+          </div>
+          <div class="project-1-info">
+            <h3>Project name goes here</h3>
+            <ul class="project-technologies">
               <li>HTML/CSS</li>
               <li>Ruby on Rails</li>
-              <li>JavaScript</li>
+              <li>Javascript</li>
             </ul>
-            <div class="works-bttn">
-              <a href="#" class="works-btn-styles">See this project</a>
-              <img
-                src="/resources/images/arrow.png"
-                alt="arrow image"
-                class="arrow-image"
-              />
+            <div class="project-button">
+              <div>
+                <a href="#"><span>See this project</span> </a>
+              </div>
+              <div class="project-button-arrow">
+                <img src="./resources/images/arrow.png" alt="arrow" />
+              </div>
             </div>
           </div>
         </div>
-        <div class="project-intro">
-          <img
-            src="/resources/images/pinkcomputer.png"
-            alt="Pink Computer"
-            class="section-image"
-          />
-        </div>
-        <div class="works-info">
-          <h3>Project name goes here</h3>
-          <div class="works-skills">
-            <ul class="skills-list">
+        <div class="project-1">
+          <div class="project-1-image">
+            <img
+              class="project-img"
+              src="./resources/images/pinkcomputer.png"
+              alt="Computer"
+            />
+          </div>
+          <div class="project-1-info">
+            <h3>Project name goes here</h3>
+            <ul class="project-technologies">
               <li>HTML/CSS</li>
               <li>Ruby on Rails</li>
-              <li>JavaScript</li>
+              <li>Javascript</li>
             </ul>
-            <div class="works-bttn">
-              <a href="#" class="works-btn-styles">See this project</a>
-              <img
-                src="/resources/images/arrow.png"
-                alt="arrow image"
-                class="arrow-image"
-              />
+            <div class="project-button">
+              <div>
+                <a href="#"><span>See this project</span> </a>
+              </div>
+              <div class="project-button-arrow">
+                <img src="./resources/images/arrow.png" alt="arrow" />
+              </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <section class="about-content">
-            <h2 class="main-topic topic-h2">About</h2>
-            <p class="about-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ea eiusmod
-            </p>
-          </section>
-          <div class="get-my-cv">
-            <a
-              class="get-my-cv-btn start-colab colab-butn colab-detail"
-              href="#"
-              >Get my CV
-              <img
-                class="download-cv"
-                src="resources/images/getmycv.png"
-                alt="get my cv image"
-            /></a>
-          </div>
-        </div>
-        <div class="languages-box lang-fw-skills-boxes bottom-boxes">
-          <div class="languages-content">
-            <div class="category-header">
-              <ul>
-                <li>Languages</li>
-              </ul>
-            </div>
-            <ul class="category-listed">
-              <li>Javascript(ES5/ES6)</li>
-              <li>Ruby</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-          </div>
-        </div>
-        <div class="frameworks-box lang-fw-skills-boxes bottom-boxes">
-          <div class="languages-content">
-            <div class="category-header">
-              <ul>
-                <li>Frameworks</li>
-              </ul>
-            </div>
-
-            <ul class="category-listed">
-              <li>Bootstrap</li>
-              <li>Ruby on rails</li>
-              <li>RSpec</li>
-              <li>CSS</li>
-              <li>Capibara</li>
-              <li>Selenium</li>
-            </ul>
-          </div>
-        </div>
-        <div class="skills-box lang-fw-skills-boxes bottom-boxes">
-          <div class="languages-content">
-            <div class="category-header">
-              <ul>
-                <li>Skills</li>
-              </ul>
-            </div>
-            <ul class="category-listed">
-              <li>Codekit</li>
-              <li>Codepen</li>
-              <li>GitHub</li>
-              <li>GitLAb</li>
-              <li>Terminal</li>
-            </ul>
           </div>
         </div>
       </div>
     </section>
+    <section class="about-content">
+      <h1>About</h1>
+      <p class="about-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea
+        eiusmod
+      </p>
+    </section>
+    <div class="get-my-cv">
+      <a class="get-my-cv-btn main-button button-action" href="#"
+        >Get my CV
+        <img
+          class="download-cv"
+          src=".resources/images/getmycv.png"
+          alt="get my cv image"
+      /></a>
+    </div>
+    <div class="languages-box lang-fw-skills-boxes bottom-boxes">
+      <div class="languages-content">
+        <div class="category-header">
+          <ul>
+            <li>Languages</li>
+          </ul>
+        </div>
+        <ul class="category-listed">
+          <li>Javascript(ES5/ES6)</li>
+          <li>Ruby</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="frameworks-box lang-fw-skills-boxes bottom-boxes">
+      <div class="languages-content">
+        <div class="category-header">
+          <ul>
+            <li>Frameworks</li>
+          </ul>
+        </div>
+
+        <ul class="category-listed">
+          <li>Bootstrap</li>
+          <li>Ruby on rails</li>
+          <li>RSpec</li>
+          <li>CSS</li>
+          <li>Capibara</li>
+          <li>Selenium</li>
+        </ul>
+      </div>
+    </div>
+    <div class="skills-box lang-fw-skills-boxes bottom-boxes">
+      <div class="languages-content">
+        <div class="category-header">
+          <ul>
+            <li>Skills</li>
+          </ul>
+        </div>
+        <ul class="category-listed">
+          <li>Codekit</li>
+          <li>Codepen</li>
+          <li>GitHub</li>
+          <li>GitLAb</li>
+          <li>Terminal</li>
+        </ul>
+      </div>
+    </div>
+
     <footer class="footer">
       <fieldset>
         <form
@@ -318,8 +335,8 @@
           </ul>
           <div class="get-my-cv button-bottom">
             <button
-              class="get-my-cv-btn start-colab colab-butn colab-detail"
               type="submit"
+              class="get-my-cv-btn main-button button-action last-button"
             >
               Start Collaboration
             </button>
@@ -338,20 +355,22 @@
         <ul>
           <li>
             <a href="#"
-              ><img src="/resources/images/stackoverflow.svg" alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="#"><img src="/resources/images/ic_github.svg" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="/resources/images/ic_twitter.svg" alt=""
+              ><img src="./resources/images/stackoverflow.svg" alt=""
             /></a>
           </li>
           <li>
             <a href="#"
-              ><img src="/resources/images/ic_linkedin.svg" alt=""
+              ><img src="./resources/images/ic_github.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./resources/images/ic_twitter.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./resources/images/ic_linkedin.svg" alt=""
             /></a>
           </li>
           <li>
@@ -359,7 +378,7 @@
           </li>
           <li>
             <a href="#"
-              ><img src="/resources/images/ic_angellist.svg" alt=""
+              ><img src="./resources/images/ic_angellist.svg" alt=""
             /></a>
           </li>
         </ul>
