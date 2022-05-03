@@ -1,196 +1,274 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@400;700;900&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
+/* Global rules */
 html {
   font-size: 62.5%;
 }
 
+body {
+  box-sizing: border-box;
+}
+
 html,
 body {
-  height: 100vh;
-  box-sizing: border-box;
-  line-height: normal;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 400;
+  color: #1a2236;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 11rem;
+    line-height: 100%;
+  }
+}
+
+h3 {
+  font-family: Poppins, serif;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+  color: #fff;
+}
+
+p {
+  font-family: Poppins, serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
 }
 
 a {
   text-decoration: none;
+  font-family: Poppins, serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
 }
 
-.main-topic {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  font-size: 5rem;
-}
+/* 1. About me section" */
 
-.top-nav-burger {
+.menu-top {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 1.5rem;
 }
 
-.container.introduction {
+.desktop-nav-top {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .menu-top {
+    display: none;
+  }
+
+  .desktop-nav-top {
+    display: block;
+  }
+
+  .desktop-nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 3.8rem 26.5rem;
+    border: 1px solid black;
+  }
+}
+
+.background-image-nav {
+  background-image: url("/resources/images/image_geometry_1.png");
+  width: 100%;
+  height: 7.4rem;
+  background-repeat: no-repeat;
+  min-height: fit-content;
+}
+
+.burguer-image {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 90vh;
   background-image: url("/resources/images/image_geometry_2.png");
   background-repeat: no-repeat;
   background-position: bottom;
 }
 
-.grd-container {
-  display: grid;
-  justify-content: center;
+.about-me-background {
+  display: none;
 }
 
-.works-catalog {
-  grid-template-rows: repeat(9, auto auto);
+@media (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .about-me {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-image: none;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-me-mobile {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  .about-me-background {
+    display: block;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    min-width: 0;
+    min-height: 0;
+  }
 }
 
-.introduction {
-  display: flex;
-  max-width: 120rem;
-  margin: 0 auto;
-  flex-direction: column;
-  min-height: 85vh;
-  align-items: center;
-  padding: 2.5rem;
+.about-me-header {
+  padding: 2rem;
 }
 
-.developers-name {
-  font-family: "Playfair Display", serif;
-  font-weight: normal;
-  color: #1a2236;
-  font-size: 5rem;
-  line-height: 5rem;
+.about-me-paragraph {
+  padding: 2rem 2rem 1rem;
 }
 
-.intro-content {
-  font-family: Poppins, serif;
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: #1a2236;
-  line-height: 21px;
+.button-top {
   padding-top: 2rem;
-  padding-bottom: 0.5rem;
 }
 
-.colab-detail {
-  display: flex;
-  padding-top: 2.5rem;
+.main-button {
+  text-align: center;
+  background-color: #1a2236;
+  padding: 1rem;
+  margin: 2rem;
 }
 
-.colab-butn {
-  display: flex;
-  flex: 1;
-  justify-content: center;
+@media (min-width: 768px) {
+  .main-button {
+    max-width: 27vw;
+    height: 2rem;
+    text-align: center;
+  }
 }
 
-.start-colab {
-  font-family: Poppins, serif;
-  font-size: 1.6rem;
-  color: #fff;
-  background: #1a2236;
-  padding: 1.3rem 3rem;
-  flex: 1;
-}
-
-.colab-butn a:hover {
+.main-button:hover {
   color: #1a2236;
   background-color: #fff;
   border: 1px solid #1a2236;
-  transform: scale(1.02);
 }
 
-.colab-butn a:active {
-  border: 2px solid #1a2236;
+.main-button a:hover {
+  color: #1a2236;
 }
 
-.works-bttn {
+/* 2. Projects */
+
+.project-header {
+  padding: 2rem 1rem;
+}
+
+.project-1-image img {
+  min-width: 100%;
+}
+
+.project-img {
+  min-width: 100%;
+}
+
+.project-1-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.project-1-image {
   display: inline-flex;
-  gap: 1rem;
-  font-family: Poppins, serif;
-  font-size: 1.6rem;
-  font-weight: 500;
-  border: 1px solid #fff;
-  padding: 1rem 2rem;
-}
-
-.works-btn-styles {
-  color: #fff;
-}
-
-.menu-burger-image img:hover {
-  transform: scale(1.2);
-}
-
-.topic-h2 {
-  display: flex;
-  margin: 0 auto;
-  padding: 2.5rem 2rem;
-}
-
-.project-intro {
-  display: flex;
   flex: 1;
   justify-content: center;
 }
 
-.works-info {
+.grd-container {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.project-1 {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  gap: 1rem;
   background-color: #1a2236;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
-  margin-bottom: 0;
+  padding: 0;
+  margin: 0 auto;
 }
 
-.works-info h3 {
-  font-family: Poppins, serif;
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 300;
-  padding-top: 1rem;
-}
-
-.skills-list {
+.project-technologies {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  justify-content: space-between;
+  padding: 1rem 0;
+  padding-bottom: 2rem;
 }
 
-.skills-list li {
+.project-technologies li {
   background-color: #98dede;
-  padding: 0.5rem 1.5rem;
   font-family: Poppins, serif;
   font-weight: 300;
+  font-size: 1rem;
+  line-height: 80%;
+  text-align: center;
+  padding: 0.6rem 1rem;
 }
 
-.arrow-image {
-  padding-top: 0.3rem;
-  height: 100%;
+.project-button {
+  display: inline-flex;
+  padding: 1rem;
+  border: 1px solid #fff;
+  margin-bottom: 2rem;
 }
 
-.about-paragraph {
-  font-family: Poppins, serif;
-  font-weight: 400;
-  font-size: 1.4rem;
-  padding-left: 2rem;
-  padding-bottom: 2.5rem;
+.project-button-arrow {
+  padding-left: 1.2rem;
 }
+
+/* About & form */
 
 .get-my-cv-btn {
   display: flex;
   gap: 2rem;
   margin: 0 2rem;
   margin-bottom: 1.5rem;
+  justify-content: center;
 }
 
 .about-content {
   padding-top: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 3.2rem;
 }
 
 .lang-fw-skills {
@@ -204,7 +282,7 @@ a {
 
 .lang-fw-skills-boxes {
   display: flex;
-  margin: 2.5rem;
+  margin: 2rem;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -375,11 +453,11 @@ a {
   gap: 1rem;
 }
 
-.textarea {
-  min-height: 11.2rem;
+.button-bottom {
+  margin-top: 2rem;
 }
 
-.button-bottom {
-  display: flex;
-  padding-top: 2rem;
+.last-button {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
