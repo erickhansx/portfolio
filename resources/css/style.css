@@ -34,6 +34,13 @@ h1 {
 
 @media (min-width: 768px) {
   h1 {
+    font-size: 9rem;
+    line-height: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
     font-size: 11rem;
     line-height: 100%;
   }
@@ -54,7 +61,8 @@ p {
   line-height: 2.1rem;
 }
 
-a {
+a,
+button {
   text-decoration: none;
   font-family: Poppins, serif;
   font-size: 1.6rem;
@@ -91,7 +99,7 @@ a {
 }
 
 .background-image-nav {
-  background-image: url("/resources/images/image_geometry_1.png");
+  background-image: url("./resources/images/image_geometry_1.png");
   width: 100%;
   height: 7.4rem;
   background-repeat: no-repeat;
@@ -107,7 +115,7 @@ a {
   flex-direction: column;
   align-content: space-between;
   height: 90vh;
-  background-image: url("/resources/images/image_geometry_2.png");
+  background-image: url("./resources/images/image_geometry_2.png");
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -122,11 +130,30 @@ a {
   }
 
   .about-me {
+    box-sizing: border-box;
+    width: 144rem;
+    margin: 30px auto;
     display: grid;
+    grid-template-rows: 20rem 8.4rem 7rem 17.5rem;
+    grid-template-columns: 50% 50%;
+
+    grid-template-areas:
+      "h1 background"
+      "paragraph background"
+      "button background"
+      "dots background";
+  }
+
+  .main-h1 {
+    grid-area: h1;
+  }
+
+  /* .about-me {
+    display: grid;
+    width: 140rem;
     grid-template-columns: 50% 50%;
     background-image: none;
     height: auto;
-    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -146,7 +173,7 @@ a {
     grid-row: 1/2;
     min-width: 0;
     min-height: 0;
-  }
+  } */
 }
 
 .about-me-header {
@@ -291,21 +318,21 @@ a {
 .languages-box {
   display: flex;
   background-color: #1c528a;
-  background-image: url("/resources/images/hashtag.png");
+  background-image: url("./resources/images/hashtag.png");
   background-repeat: no-repeat;
   background-position: bottom right;
 }
 
 .frameworks-box {
   background-color: #e2505c;
-  background-image: url("/resources/images/rectangle.png");
+  background-image: url("./resources/images/rectangle.png");
   background-repeat: no-repeat;
   background-position: bottom right;
 }
 
 .skills-box {
   background-color: #febf52;
-  background-image: url("/resources/images/bulbskills.png");
+  background-image: url("./resources/images/bulbskills.png");
   background-repeat: no-repeat;
   background-position: bottom right;
 }
@@ -458,6 +485,9 @@ a {
 }
 
 .last-button {
+  display: flex;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
