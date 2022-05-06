@@ -249,7 +249,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
     grid-template-areas:
       "proj pc1 pc1"
       "proj pc1 pc1"
