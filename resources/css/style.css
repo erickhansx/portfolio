@@ -30,18 +30,12 @@ h1 {
   line-height: 5rem;
   font-weight: 400;
   color: #1a2236;
+  padding-left: 2rem;
 }
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 9rem;
-    line-height: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  h1 {
-    font-size: 11rem;
+    font-size: 687.5%;
     line-height: 100%;
   }
 }
@@ -113,8 +107,8 @@ button {
 .about-me {
   display: flex;
   flex-direction: column;
+  height: 80vh;
   align-content: space-between;
-  height: 90vh;
   background-image: url("../images/image_geometry_2.png");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -143,9 +137,8 @@ button {
 
   .about-me-desktop {
     display: grid;
-    height: 80%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr 8rem 17.5rem;
+    grid-template-rows: auto auto 8rem 17.5rem;
 
     /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
     grid-template-areas:
@@ -163,8 +156,7 @@ button {
   }
 
   .about-me-background img {
-    min-width: 100%;
-    height: 100%;
+    width: 4378.5%;
   }
 
   .about-me-background {
@@ -235,14 +227,79 @@ button {
 
 /* 2. Projects */
 
-@media (min-width: 768px) {
-  .projects {
-    margin-top: 20rem;
-  }
+.dotted-image-top {
+  display: none;
+}
+
+.dotted-img-projects {
+  display: none;
 }
 
 .project-header {
   padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .projects {
+    margin-top: 20rem;
+  }
+
+  .grd-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+      "proj pc1 pc1"
+      "proj pc1 pc1"
+      "pc2 bg1 pc3"
+      "pc4 bg2 bg2"
+      "bg3 bg3 pc5";
+  }
+
+  .projects-head {
+    position: relative;
+    grid-area: proj;
+  }
+
+  .dotted-img-projects {
+    height: 15%;
+    position: absolute;
+    bottom: 60rem;
+    left: 36rem;
+  }
+
+  .p1 {
+    position: relative;
+    height: 22.06em;
+    width: 87em;
+    grid-area: pc1;
+    top: 8rem;
+  }
+
+  .p1-info h3 {
+    font-size: 375%;
+    font-weight: 700;
+    line-height: 4.8rem;
+  }
+
+  .p1 img {
+    position: absolute;
+    width: 90em;
+    height: 34.87em;
+    z-index: -1;
+    bottom: 2rem;
+  }
+
+  .p2 {
+    grid-area: pc2;
+  }
+
+  .project-header {
+    display: inline-block;
+    transform: rotate(-90deg);
+  }
 }
 
 .project-1-image img {
