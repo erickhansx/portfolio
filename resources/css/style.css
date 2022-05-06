@@ -30,18 +30,12 @@ h1 {
   line-height: 5rem;
   font-weight: 400;
   color: #1a2236;
+  padding-left: 2rem;
 }
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 9rem;
-    line-height: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  h1 {
-    font-size: 11rem;
+    font-size: 687.5%;
     line-height: 100%;
   }
 }
@@ -94,12 +88,12 @@ button {
     justify-content: center;
     gap: 5rem;
     padding: 3.8rem 26.5rem;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
   }
 }
 
 .background-image-nav {
-  background-image: url("./resources/images/image_geometry_1.png");
+  background-image: url("../images/image_geometry_1.png");
   width: 100%;
   height: 7.4rem;
   background-repeat: no-repeat;
@@ -113,9 +107,9 @@ button {
 .about-me {
   display: flex;
   flex-direction: column;
+  height: 80vh;
   align-content: space-between;
-  height: 90vh;
-  background-image: url("./resources/images/image_geometry_2.png");
+  background-image: url("../images/image_geometry_2.png");
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -124,8 +118,78 @@ button {
   display: none;
 }
 
-.about-me-header {
-  padding: 2rem;
+@media (min-width: 768px) {
+  .about-me {
+    background-image: none;
+  }
+}
+
+@media (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  .about-me-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto 8rem 17.5rem;
+
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+    grid-template-areas:
+      "h1 h1 background background"
+      "paragraph paragraph background background"
+      "button button background background"
+      "dotted dotted background background";
+  }
+
+  .about-me-header {
+    position: relative;
+    top: 12rem;
+    margin-left: 16rem;
+    grid-area: h1;
+  }
+
+  .about-me-background img {
+    width: 4378.5%;
+  }
+
+  .about-me-background {
+    display: block;
+    grid-area: background;
+    z-index: 10;
+  }
+
+  .about-me-paragraph {
+    margin-top: 12rem;
+    margin-right: 6rem;
+    margin-left: 16rem;
+    grid-area: paragraph;
+  }
+
+  .button-top {
+    margin-left: 16rem;
+    grid-area: button;
+  }
+
+  .dotted-image-top img {
+    max-width: 100%;
+    height: 60%;
+  }
+
+  .dotted-image-top {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: dotted;
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: -8rem;
+  }
 }
 
 .about-me-paragraph {
@@ -163,8 +227,79 @@ button {
 
 /* 2. Projects */
 
+.dotted-image-top {
+  display: none;
+}
+
+.dotted-img-projects {
+  display: none;
+}
+
 .project-header {
   padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .projects {
+    margin-top: 20rem;
+  }
+
+  .grd-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+    grid-template-areas:
+      "proj pc1 pc1"
+      "proj pc1 pc1"
+      "pc2 bg1 pc3"
+      "pc4 bg2 bg2"
+      "bg3 bg3 pc5";
+  }
+
+  .projects-head {
+    position: relative;
+    grid-area: proj;
+  }
+
+  .dotted-img-projects {
+    height: 15%;
+    position: absolute;
+    bottom: 60rem;
+    left: 36rem;
+  }
+
+  .p1 {
+    position: relative;
+    height: 22.06em;
+    width: 87em;
+    grid-area: pc1;
+    top: 8rem;
+  }
+
+  .p1-info h3 {
+    font-size: 375%;
+    font-weight: 700;
+    line-height: 4.8rem;
+  }
+
+  .p1 img {
+    position: absolute;
+    width: 90em;
+    height: 34.87em;
+    z-index: -1;
+    bottom: 2rem;
+  }
+
+  .p2 {
+    grid-area: pc2;
+  }
+
+  .project-header {
+    display: inline-block;
+    transform: rotate(-90deg);
+  }
 }
 
 .project-1-image img {
@@ -266,21 +401,21 @@ button {
 .languages-box {
   display: flex;
   background-color: #1c528a;
-  background-image: url("./resources/images/hashtag.png");
+  background-image: url("../images/hashtag.png");
   background-repeat: no-repeat;
   background-position: bottom right;
 }
 
 .frameworks-box {
   background-color: #e2505c;
-  background-image: url("./resources/images/rectangle.png");
+  background-image: url("../images/rectangle.png");
   background-repeat: no-repeat;
   background-position: bottom right;
 }
 
 .skills-box {
   background-color: #febf52;
-  background-image: url("./resources/images/bulbskills.png");
+  background-image: url("../images/bulbskills.png");
   background-repeat: no-repeat;
   background-position: bottom right;
 }

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./resources/css/reset.css" />
-    <link rel="stylesheet" href="./resources/css/style.css" />
+    <link rel="stylesheet" href="../resources/css/reset.css" />
+    <link rel="stylesheet" href="../resources/css/style.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -24,7 +24,7 @@
           <a href="#">
             <img
               class="burguer-image"
-              src="./resources/images/ic_menu.png"
+              src="../resources/images/ic_menu.png"
               alt=""
             />
           </a>
@@ -33,7 +33,7 @@
     </header>
     <main>
       <section class="about-me">
-        <div class="about-me-mobile">
+        <div class="about-me-mobile about-me-desktop">
           <div class="about-me-header">
             <h1 class="main-h1">
               Charlie <br />
@@ -53,29 +53,37 @@
               >Start collaboration</a
             >
           </div>
-        </div>
-        <div class="about-me-background">
-          <img
-            src="./resources/images/mainbackground.png"
-            alt="main background"
-          />
+          <div class="about-me-background">
+            <img
+              src="/resources/images/mainbackground.png"
+              alt="main background"
+            />
+          </div>
+          <div class="dotted-image-top">
+            <img src="/resources/images/image_dots.png" alt="Dotted image" />
+          </div>
         </div>
       </section>
     </main>
     <section class="projects">
-      <div class="projects-head">
-        <h1 class="project-header">Projects</h1>
-      </div>
       <div class="grd-container">
-        <div class="project-1">
+        <div class="projects-head">
+          <h1 class="project-header">Projects</h1>
+          <img
+            class="dotted-img-projects"
+            src="/resources/images/image_dots.png"
+            alt="dotted image"
+          />
+        </div>
+        <div class="project-1 p1">
           <div class="project-1-image">
             <img
               class="project-img"
-              src="./resources/images/computer-hands.png"
+              src="../resources/images/computer-hands.png"
               alt="Computer"
             />
           </div>
-          <div class="project-1-info">
+          <div class="project-1-info p1-info">
             <h3>Project name goes here</h3>
             <ul class="project-technologies">
               <li>HTML/CSS</li>
@@ -87,16 +95,16 @@
                 <a href="#"><span>See this project</span> </a>
               </div>
               <div class="project-button-arrow">
-                <img src="./resources/images/arrow.png" alt="arrow" />
+                <img src="../resources/images/arrow.png" alt="arrow" />
               </div>
             </div>
           </div>
         </div>
-        <div class="project-1">
+        <div class="project-1 p2">
           <div class="project-1-image">
             <img
               class="project-img"
-              src="./resources/images/macbookpro.png"
+              src="../resources/images/macbookpro.png"
               alt="Computer"
             />
           </div>
@@ -112,16 +120,16 @@
                 <a href="#"><span>See this project</span> </a>
               </div>
               <div class="project-button-arrow">
-                <img src="./resources/images/arrow.png" alt="arrow" />
+                <img src="../resources/images/arrow.png" alt="arrow" />
               </div>
             </div>
           </div>
         </div>
-        <div class="project-1">
+        <div class="project-1 p3">
           <div class="project-1-image">
             <img
               class="project-img"
-              src="./resources/images/abcomputer.png"
+              src="../resources/images/abcomputer.png"
               alt="Computer"
             />
           </div>
@@ -137,16 +145,16 @@
                 <a href="#"><span>See this project</span> </a>
               </div>
               <div class="project-button-arrow">
-                <img src="./resources/images/arrow.png" alt="arrow" />
+                <img src="../resources/images/arrow.png" alt="arrow" />
               </div>
             </div>
           </div>
         </div>
-        <div class="project-1">
+        <div class="project-1 p4">
           <div class="project-1-image">
             <img
               class="project-img"
-              src="./resources/images/graphicscomputerleft.png"
+              src="../resources/images/graphicscomputerleft.png"
               alt="Computer"
             />
           </div>
@@ -162,16 +170,16 @@
                 <a href="#"><span>See this project</span> </a>
               </div>
               <div class="project-button-arrow">
-                <img src="./resources/images/arrow.png" alt="arrow" />
+                <img src="../resources/images/arrow.png" alt="arrow" />
               </div>
             </div>
           </div>
         </div>
-        <div class="project-1">
+        <div class="project-1 p5">
           <div class="project-1-image">
             <img
               class="project-img"
-              src="./resources/images/graphicscomputerright.png"
+              src="../resources/images/graphicscomputerright.png"
               alt="Computer"
             />
           </div>
@@ -187,16 +195,16 @@
                 <a href="#"><span>See this project</span> </a>
               </div>
               <div class="project-button-arrow">
-                <img src="./resources/images/arrow.png" alt="arrow" />
+                <img src="../resources/images/arrow.png" alt="arrow" />
               </div>
             </div>
           </div>
         </div>
-        <div class="project-1">
+        <div class="project-1 p6">
           <div class="project-1-image">
             <img
               class="project-img"
-              src="./resources/images/pinkcomputer.png"
+              src="../resources/images/pinkcomputer.png"
               alt="Computer"
             />
           </div>
@@ -212,7 +220,7 @@
                 <a href="#"><span>See this project</span> </a>
               </div>
               <div class="project-button-arrow">
-                <img src="./resources/images/arrow.png" alt="arrow" />
+                <img src="../resources/images/arrow.png" alt="arrow" />
               </div>
             </div>
           </div>
@@ -233,7 +241,7 @@
         >Get my CV
         <img
           class="download-cv"
-          src=".resources/images/getmycv.png"
+          src="../resources/images/getmycv.png"
           alt="get my cv image"
       /></a>
     </div>
@@ -348,24 +356,24 @@
           <h3 class="social-h3">Get my Resume</h3>
           <img
             class="resume-image"
-            src="./resources/images/ic_link_teal.svg"
+            src="../resources/images/ic_link_teal.svg"
             alt=""
           />
         </div>
         <ul>
           <li>
             <a href="#"
-              ><img src="./resources/images/stackoverflow.svg" alt=""
+              ><img src="../resources/images/stackoverflow.svg" alt=""
             /></a>
           </li>
           <li>
             <a href="#"
-              ><img src="./resources/images/ic_github.svg" alt=""
+              ><img src="../resources/images/ic_github.svg" alt=""
             /></a>
           </li>
           <li>
             <a href="#"
-              ><img src="./resources/images/ic_twitter.svg" alt=""
+              ><img src="../resources/images/ic_twitter.svg" alt=""
             /></a>
           </li>
           <li>
